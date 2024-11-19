@@ -2,8 +2,7 @@
 ./kafka-topics.sh --create --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic
 
 # alter the number of partitions of a topic
-./kafka-topics.sh  --bootstrap-server broker-1:19092,broker-2:19092,broke
-r-3:19092 --topic test-topic --alter --partitions 3
+./kafka-topics.sh  --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic --alter --partitions 3
 
 # describe a topic
 ./kafka-topics.sh --describe --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic
